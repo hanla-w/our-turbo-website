@@ -1,0 +1,215 @@
+body{
+    background-color: #E69FFF;
+    margin: 0;
+    font-family: Keep on Truckin;
+}
+
+@font-face {
+    font-family: Keep on Truckin;
+    src: url(./font/KeeponTruckin.ttf);
+}
+
+canvas#drawingKwiatek {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    canvas#drawingKwiatek {
+        display: block;
+    }
+}
+
+.navbar {
+    color: white;
+    background-image: linear-gradient(#F1AA55, #ffffff00);
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+    top: 0px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #C0F5C3;
+}
+
+a:visited {
+    color: #3cd4c0;
+}
+
+.navbar__text {
+    font-size: 31px;
+    padding: 10px;
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .navbar__text {
+        display: inline;
+    }
+}
+
+.navbar__title {
+    font-size: 45px;
+    padding: 25px;
+}
+
+@media screen and (max-width: 400px) {
+    .navbar__title {
+        font-size: 32px;
+        padding: 10px;
+    }
+    
+}
+
+.my {
+    display: flex;
+    align-items: center;
+}
+
+.my__zdjecie {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 50%;
+}
+
+.my__text {
+    color: white;
+    font-size: 30px;
+}
+
+@media screen and (max-width:768px) {
+    .my {
+        flex-direction: column;
+    }
+    .my__text {
+        text-align: center;
+    }
+    .my__zdjecie {
+        width: 80%;
+    }
+}
+
+.my2 {
+    background-image: url(./obrazki/my2.png);
+    background-repeat: no-repeat;
+    padding-left: 222px;
+    padding-top: 256px;
+    padding-right: 280px;
+    width: 995px;
+    height: 1412px;
+    box-sizing: border-box;
+    float: right;
+    position: relative;
+}
+
+.my2__text {
+    color: white;
+    font-size: 35px;
+    margin: 0px;
+}
+
+@media screen and (max-width: 995px){
+    .my2 {
+        background-size: cover;
+        width: 100vw;
+        padding: 0px;
+        float: unset;
+        z-index: -1;
+        height: calc(100vw/995*1412)
+        
+    }
+
+    .my2__text {
+        font-size: 20px;
+        text-align: center;
+        padding: 50px;
+    }
+}
+
+.contact {
+    background-image: url(./obrazki/contact-blob.png);
+    background-repeat: no-repeat;
+    padding-left: 104px;
+    padding-top: 241px;
+    padding-right: 334px;
+    height: 1040px;
+    box-sizing: border-box;
+    float: left;
+    /* margin-top: 500px; */
+    margin-left: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    width: calc(100% - 30px);
+}
+
+.contact h4 {
+    color: white;
+    font-size: 48px
+}
+
+.contact__text {
+    color: white;
+    font-size: 35px;
+    margin: 10px 0 10px;
+    width: 351px;
+    /* word-wrap: break-word; */
+}
+
+@media screen and (max-width: 789px) {
+    .contact {
+        background-size: cover;
+        padding: 0 50px;
+        z-index: -1;
+        height: calc(100vw/789*1040);
+        width: 100vw;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contact h4 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .contact__text {
+       width: unset;
+       font-size: 20px;
+    }
+}
+
+.kwiatek {
+    z-index: -1;
+    position: absolute;
+}
+
+.kwiatek-1 {
+    left: -237px;
+    top: 0px;
+}
+
+.kwiatek-2 {
+    right: 0px;
+    top: 450px;
+}
+
+.kwiatek-3 {
+    right: 0px;
+}
+
+.kwiatek-4 {
+    top: -380px;
+    left: 60px;
+}
+
+@media screen and (max-width: 786px) {
+    .kwiatek {
+        display: none;
+    }
+}
